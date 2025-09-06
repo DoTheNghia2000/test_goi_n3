@@ -1,4 +1,4 @@
-const vocab = [
+const vocabData = [
    {
       kanji: "男性",
       hiragana: "だんせい",
@@ -3968,5 +3968,1221 @@ const vocab = [
       meaning: "Chữa bệnh, làm khỏi",
       exampleJa: "医者に風邪を治してもらいました。",
       exampleVi: "Tôi đã được bác sĩ chữa cảm."
-   }
+   },
+   {
+      kanji: "亡くなる",
+      hiragana: "なくなる",
+      pos: "Động từ",
+      meaning: "chết, mất (cách nói lịch sự)",
+      exampleJa: "おじいさんが亡くなりました。",
+      exampleVi: "Ông tôi đã mất."
+   },
+   {
+      kanji: "亡くす",
+      hiragana: "なくす",
+      pos: "Động từ",
+      meaning: "mất đi (người thân, bạn bè...)",
+      exampleJa: "友だちを事故で亡くしました。",
+      exampleVi: "Tôi đã mất bạn vì tai nạn."
+   },
+   {
+      kanji: "生まれる",
+      hiragana: "うまれる",
+      pos: "Động từ",
+      meaning: "được sinh ra",
+      exampleJa: "日本で子どもが生まれました。",
+      exampleVi: "Con tôi được sinh ra ở Nhật."
+   },
+   {
+      kanji: "産む",
+      hiragana: "うむ",
+      pos: "Động từ",
+      meaning: "sinh, đẻ (dùng cho mẹ)",
+      exampleJa: "彼女は元気な赤ちゃんを産みました。",
+      exampleVi: "Cô ấy đã sinh một em bé khỏe mạnh."
+   },
+   {
+      kanji: "生む",
+      hiragana: "うむ",
+      pos: "Động từ",
+      meaning: "tạo ra, sinh ra (nghĩa rộng)",
+      exampleJa: "新しいアイデアを生む。",
+      exampleVi: "Sinh ra ý tưởng mới."
+   },
+   {
+      kanji: "出産",
+      hiragana: "しゅっさん",
+      pos: "Danh từ / する-Động từ",
+      meaning: "sinh nở, sinh con",
+      exampleJa: "姉は来月出産します。",
+      exampleVi: "Chị tôi sẽ sinh con vào tháng sau."
+   },
+   {
+      kanji: "出会う",
+      hiragana: "であう",
+      pos: "Động từ",
+      meaning: "gặp gỡ (tình cờ)",
+      exampleJa: "駅で友だちに出会いました。",
+      exampleVi: "Tôi tình cờ gặp bạn ở ga."
+   },
+   {
+      kanji: "出会い",
+      hiragana: "であい",
+      pos: "Danh từ",
+      meaning: "cuộc gặp gỡ",
+      exampleJa: "その出会いは私の人生を変えました。",
+      exampleVi: "Cuộc gặp gỡ đó đã thay đổi cuộc đời tôi."
+   },
+   {
+      kanji: "訪ねる",
+      hiragana: "たずねる",
+      pos: "Động từ",
+      meaning: "thăm, ghé thăm",
+      exampleJa: "先生の家を訪ねました。",
+      exampleVi: "Tôi đã đến thăm nhà thầy giáo."
+   },
+   {
+      kanji: "訪問",
+      hiragana: "ほうもん",
+      pos: "Danh từ / する-Động từ",
+      meaning: "sự viếng thăm",
+      exampleJa: "社長を訪問しました。",
+      exampleVi: "Tôi đã đi thăm giám đốc."
+   },
+   {
+      kanji: "付き合う",
+      hiragana: "つきあう",
+      pos: "Động từ",
+      meaning: "kết giao, hẹn hò, đi cùng",
+      exampleJa: "友だちと映画に付き合う。",
+      exampleVi: "Tôi đi cùng bạn xem phim."
+   },
+   {
+      kanji: "交際",
+      hiragana: "こうさい",
+      pos: "Danh từ / する-Động từ",
+      meaning: "giao du, hẹn hò",
+      exampleJa: "二人は３年前から交際しています。",
+      exampleVi: "Hai người đó đã quen nhau từ 3 năm trước."
+   },
+   {
+      kanji: "効く",
+      hiragana: "きく",
+      pos: "Động từ",
+      meaning: "có tác dụng, hiệu quả",
+      exampleJa: "この薬は頭痛によく効きます。",
+      exampleVi: "Thuốc này rất hiệu quả với đau đầu."
+   },
+   {
+      kanji: "効く目がある",
+      hiragana: "きくめがある",
+      pos: "Cụm từ",
+      meaning: "có tác dụng",
+      exampleJa: "この薬は効く目がある。",
+      exampleVi: "Thuốc này có hiệu quả."
+   },
+   {
+      kanji: "効く目がない",
+      hiragana: "きくめがない",
+      pos: "Cụm từ",
+      meaning: "không có tác dụng",
+      exampleJa: "この薬は効く目がない。",
+      exampleVi: "Thuốc này không có hiệu quả."
+   },
+   {
+      kanji: "効く目が強い",
+      hiragana: "きくめがつよい",
+      pos: "Cụm từ",
+      meaning: "tác dụng mạnh",
+      exampleJa: "この薬は効く目が強い。",
+      exampleVi: "Thuốc này có tác dụng mạnh."
+   },
+   {
+      kanji: "効く目が弱い",
+      hiragana: "きくめがよわい",
+      pos: "Cụm từ",
+      meaning: "tác dụng yếu",
+      exampleJa: "この薬は効く目が弱い。",
+      exampleVi: "Thuốc này có tác dụng yếu."
+   },
+   {
+      kanji: "はやる",
+      hiragana: "はやる",
+      pos: "Động từ",
+      meaning: "thịnh hành, lan rộng",
+      exampleJa: "若者の間でゲームがはやっている。",
+      exampleVi: "Trò chơi đang thịnh hành trong giới trẻ."
+   },
+   {
+      kanji: "ブーム",
+      hiragana: "ぶーむ",
+      pos: "Danh từ",
+      meaning: "trào lưu, phong trào",
+      exampleJa: "韓国ドラマがブームになっている。",
+      exampleVi: "Phim Hàn đang trở thành trào lưu."
+   },
+   {
+      kanji: "流行する",
+      hiragana: "りゅうこうする",
+      pos: "Động từ",
+      meaning: "thịnh hành, phổ biến",
+      exampleJa: "新しいファッションが流行している。",
+      exampleVi: "Thời trang mới đang thịnh hành."
+   },
+   {
+      kanji: "経つ",
+      hiragana: "たつ",
+      pos: "Động từ",
+      meaning: "trôi qua (thời gian)",
+      exampleJa: "日本に来て３年が経ちました。",
+      exampleVi: "Đã 3 năm trôi qua từ khi tôi đến Nhật."
+   },
+   {
+      kanji: "間に合う",
+      hiragana: "まにあう",
+      pos: "Động từ",
+      meaning: "kịp, đúng giờ",
+      exampleJa: "バスに間に合いました。",
+      exampleVi: "Tôi đã kịp chuyến xe buýt."
+   },
+   {
+      kanji: "間に合わせる",
+      hiragana: "まにあわせる",
+      pos: "Động từ",
+      meaning: "làm cho kịp, tạm thời ứng phó",
+      exampleJa: "この服でパーティーに間に合わせる。",
+      exampleVi: "Tạm mặc bộ đồ này đi dự tiệc."
+   },
+   {
+      kanji: "通う",
+      hiragana: "かよう",
+      pos: "Động từ",
+      meaning: "đi học, đi làm (thường xuyên)",
+      exampleJa: "大学に通っています。",
+      exampleVi: "Tôi đang đi học đại học."
+   },
+   {
+      kanji: "気持ちが通う",
+      hiragana: "きもちがかよう",
+      pos: "Cụm từ",
+      meaning: "thấu hiểu, đồng cảm",
+      exampleJa: "親子の気持ちが通う。",
+      exampleVi: "Cha mẹ và con cái thấu hiểu nhau."
+   },
+   {
+      kanji: "心が通う",
+      hiragana: "こころがかよう",
+      pos: "Cụm từ",
+      meaning: "thấu hiểu, đồng điệu",
+      exampleJa: "友人と心が通う。",
+      exampleVi: "Tôi và bạn thân đồng điệu với nhau."
+   },
+   {
+      kanji: "込む",
+      hiragana: "こむ",
+      pos: "Động từ",
+      meaning: "đông đúc, chật kín",
+      exampleJa: "電車が込んでいます。",
+      exampleVi: "Tàu điện đang đông người."
+   },
+   {
+      kanji: "人込み",
+      hiragana: "ひとごみ",
+      pos: "Danh từ",
+      meaning: "đám đông",
+      exampleJa: "人込みが苦手です。",
+      exampleVi: "Tôi không thích đám đông."
+   },
+   {
+      kanji: "すく",
+      hiragana: "すく",
+      pos: "Động từ",
+      meaning: "vắng (ít người)",
+      exampleJa: "電車がすいています。",
+      exampleVi: "Tàu điện đang vắng người."
+   },
+   {
+      kanji: "混雑",
+      hiragana: "こんざつ",
+      pos: "Danh từ / する-Động từ",
+      meaning: "tình trạng đông đúc, hỗn loạn",
+      exampleJa: "朝の駅は混雑しています。",
+      exampleVi: "Nhà ga buổi sáng rất đông đúc."
+   },
+   {
+      kanji: "すれ違う",
+      hiragana: "すれちがう",
+      pos: "Động từ",
+      meaning: "lướt qua, đi ngược chiều, lỡ nhau",
+      exampleJa: "駅で友だちとすれ違いました。",
+      exampleVi: "Tôi đã lướt qua bạn ở ga."
+   },
+   {
+      kanji: "すれ違い",
+      hiragana: "すれちがい",
+      pos: "Danh từ",
+      meaning: "sự lỡ nhau, bất đồng",
+      exampleJa: "二人の間にすれ違いがあった。",
+      exampleVi: "Giữa hai người có sự bất đồng."
+   },
+   {
+      kanji: "掛かる",
+      hiragana: "かかる",
+      pos: "Động từ",
+      meaning: "mất (thời gian, chi phí), treo",
+      exampleJa: "旅行にお金が掛かります。",
+      exampleVi: "Đi du lịch tốn tiền."
+   },
+   {
+      kanji: "掛ける",
+      hiragana: "かける",
+      pos: "Động từ",
+      meaning: "treo, gọi điện, làm tốn",
+      exampleJa: "電話を掛けます。",
+      exampleVi: "Tôi gọi điện thoại."
+   },
+   {
+      kanji: "動く",
+      hiragana: "うごく",
+      pos: "Động từ",
+      meaning: "chuyển động, hoạt động",
+      exampleJa: "車が動きません。",
+      exampleVi: "Xe không chạy."
+   },
+   {
+      kanji: "動き",
+      hiragana: "うごき",
+      pos: "Danh từ",
+      meaning: "sự chuyển động, động thái",
+      exampleJa: "機械の動きをチェックする。",
+      exampleVi: "Kiểm tra chuyển động của máy móc."
+   },
+   {
+      kanji: "動かす",
+      hiragana: "うごかす",
+      pos: "Động từ",
+      meaning: "di chuyển, làm hoạt động",
+      exampleJa: "体を動かしましょう。",
+      exampleVi: "Hãy vận động cơ thể."
+   },
+   {
+      kanji: "離れる",
+      hiragana: "はなれる",
+      pos: "Động từ",
+      meaning: "cách xa, rời xa",
+      exampleJa: "駅から離れた所に住んでいます。",
+      exampleVi: "Tôi sống ở nơi cách xa ga."
+   },
+   {
+      kanji: "離す",
+      hiragana: "はなす",
+      pos: "Động từ",
+      meaning: "tách ra, để xa",
+      exampleJa: "子どもから目を離さないでください。",
+      exampleVi: "Xin đừng rời mắt khỏi trẻ nhỏ."
+   },
+   {
+      kanji: "ぶつかる",
+      hiragana: "ぶつかる",
+      pos: "Động từ",
+      meaning: "va vào, đụng vào",
+      exampleJa: "車が電柱にぶつかりました。",
+      exampleVi: "Xe ô tô đã đâm vào cột điện."
+   },
+   {
+      kanji: "衝突する",
+      hiragana: "しょうとつする",
+      pos: "Động từ",
+      meaning: "va chạm, xung đột",
+      exampleJa: "二台の車が衝突した。",
+      exampleVi: "Hai chiếc xe đã va chạm nhau."
+   },
+   {
+      kanji: "ぶつける",
+      hiragana: "ぶつける",
+      pos: "Động từ",
+      meaning: "đâm vào, va vào",
+      exampleJa: "壁に頭をぶつけました。",
+      exampleVi: "Tôi đã đập đầu vào tường."
+   },
+   {
+      kanji: "こぼれる",
+      hiragana: "こぼれる",
+      pos: "Động từ",
+      meaning: "tràn ra, bị đổ",
+      exampleJa: "コップの水がこぼれました。",
+      exampleVi: "Nước trong cốc bị tràn ra."
+   },
+   {
+      kanji: "こぼす",
+      hiragana: "こぼす",
+      pos: "Động từ",
+      meaning: "làm đổ, làm tràn",
+      exampleJa: "テーブルにコーヒーをこぼしました。",
+      exampleVi: "Tôi đã làm đổ cà phê ra bàn."
+   },
+   {
+      kanji: "ふく",
+      hiragana: "ふく",
+      pos: "Động từ",
+      meaning: "lau, chùi",
+      exampleJa: "テーブルをきれいにふきます。",
+      exampleVi: "Lau sạch bàn."
+   },
+   {
+      kanji: "ふき取る",
+      hiragana: "ふきとる",
+      pos: "Động từ",
+      meaning: "lau đi, chùi sạch",
+      exampleJa: "水をタオルでふき取る。",
+      exampleVi: "Lau khô nước bằng khăn."
+   },
+   {
+      kanji: "片付く",
+      hiragana: "かたづく",
+      pos: "Động từ",
+      meaning: "được dọn dẹp, được giải quyết",
+      exampleJa: "部屋が片付いた。",
+      exampleVi: "Phòng đã được dọn dẹp."
+   },
+   {
+      kanji: "宿題が片付いた",
+      hiragana: "しゅくだいがかたづいた",
+      pos: "Cụm từ",
+      meaning: "bài tập đã được làm xong",
+      exampleJa: "宿題が片付いたので遊びに行きます。",
+      exampleVi: "Vì đã làm xong bài tập nên tôi đi chơi."
+   },
+   {
+      kanji: "事件が片付いた",
+      hiragana: "じけんがかたづいた",
+      pos: "Cụm từ",
+      meaning: "vụ việc đã được giải quyết",
+      exampleJa: "事件が片付いたと聞いて安心しました。",
+      exampleVi: "Tôi yên tâm khi nghe rằng vụ việc đã được giải quyết."
+   },
+   {
+      kanji: "問題が片付いた",
+      hiragana: "もんだいがかたづいた",
+      pos: "Cụm từ",
+      meaning: "vấn đề đã được giải quyết",
+      exampleJa: "大きな問題が片付いた。",
+      exampleVi: "Vấn đề lớn đã được giải quyết."
+   },
+   {
+      kanji: "片付ける",
+      hiragana: "かたづける",
+      pos: "Động từ",
+      meaning: "dọn dẹp, giải quyết",
+      exampleJa: "部屋を片付けてください。",
+      exampleVi: "Hãy dọn dẹp phòng."
+   },
+   {
+      kanji: "宿題を片付ける",
+      hiragana: "しゅくだいをかたづける",
+      pos: "Cụm từ",
+      meaning: "làm xong bài tập",
+      exampleJa: "宿題を片付けてから寝ます。",
+      exampleVi: "Tôi làm xong bài tập rồi mới đi ngủ."
+   },
+   {
+      kanji: "事件を片付ける",
+      hiragana: "じけんをかたづける",
+      pos: "Cụm từ",
+      meaning: "giải quyết vụ việc",
+      exampleJa: "警察が事件を片付けた。",
+      exampleVi: "Cảnh sát đã giải quyết vụ việc."
+   },
+   {
+      kanji: "問題を片付ける",
+      hiragana: "もんだいをかたづける",
+      pos: "Cụm từ",
+      meaning: "giải quyết vấn đề",
+      exampleJa: "先生が問題を片付けました。",
+      exampleVi: "Thầy giáo đã giải quyết vấn đề."
+   },
+   {
+      kanji: "包む",
+      hiragana: "つつむ",
+      pos: "Động từ",
+      meaning: "gói, bọc",
+      exampleJa: "プレゼントを紙で包みました。",
+      exampleVi: "Tôi đã gói quà bằng giấy."
+   },
+   {
+      kanji: "包み紙",
+      hiragana: "つつみがみ",
+      pos: "Danh từ",
+      meaning: "giấy gói",
+      exampleJa: "きれいな包み紙を使いました。",
+      exampleVi: "Tôi đã dùng giấy gói đẹp."
+   },
+   {
+      kanji: "包みを開ける",
+      hiragana: "つつみをあける",
+      pos: "Cụm từ",
+      meaning: "mở gói quà",
+      exampleJa: "包みを開けて中を見ました。",
+      exampleVi: "Tôi mở gói quà ra xem bên trong."
+   },
+   {
+      kanji: "包みを開く",
+      hiragana: "つつみをひらく",
+      pos: "Cụm từ",
+      meaning: "mở gói",
+      exampleJa: "子どもがうれしそうに包みを開いた。",
+      exampleVi: "Đứa trẻ vui vẻ mở gói quà."
+   },
+   {
+      kanji: "張る",
+      hiragana: "はる",
+      pos: "Động từ",
+      meaning: "dán, căng ra",
+      exampleJa: "ポスターを壁に張りました。",
+      exampleVi: "Tôi đã dán áp phích lên tường."
+   },
+   {
+      kanji: "はがす",
+      hiragana: "はがす",
+      pos: "Động từ",
+      meaning: "bóc ra, gỡ ra",
+      exampleJa: "壁のポスターをはがしました。",
+      exampleVi: "Tôi đã gỡ áp phích trên tường."
+   },
+   {
+      kanji: "無くなる",
+      hiragana: "なくなる",
+      pos: "Động từ",
+      meaning: "mất đi, hết",
+      exampleJa: "お金が無くなりました。",
+      exampleVi: "Tiền đã hết."
+   },
+   {
+      kanji: "やる気が無くなる",
+      hiragana: "やるきがなくなる",
+      pos: "Cụm từ",
+      meaning: "mất động lực",
+      exampleJa: "失敗してやる気が無くなった。",
+      exampleVi: "Thất bại nên tôi mất động lực."
+   },
+   {
+      kanji: "記憶が無くなる",
+      hiragana: "きおくがなくなる",
+      pos: "Cụm từ",
+      meaning: "mất trí nhớ",
+      exampleJa: "事故で記憶が無くなった。",
+      exampleVi: "Do tai nạn nên tôi mất trí nhớ."
+   },
+   {
+      kanji: "無くす",
+      hiragana: "なくす",
+      pos: "Động từ",
+      meaning: "đánh mất, làm mất",
+      exampleJa: "財布を無くしました。",
+      exampleVi: "Tôi đã làm mất ví."
+   },
+   {
+      kanji: "やる気を無くす",
+      hiragana: "やるきをなくす",
+      pos: "Cụm từ",
+      meaning: "mất động lực",
+      exampleJa: "先生の言葉でやる気を無くした。",
+      exampleVi: "Lời của thầy giáo làm tôi mất động lực."
+   },
+   {
+      kanji: "記憶を無くす",
+      hiragana: "きおくをなくす",
+      pos: "Cụm từ",
+      meaning: "đánh mất ký ức",
+      exampleJa: "頭を打って記憶を無くした。",
+      exampleVi: "Bị đập đầu nên mất ký ức."
+   },
+   {
+      kanji: "足りる",
+      hiragana: "たりる",
+      pos: "Động từ",
+      meaning: "đủ",
+      exampleJa: "お金は足りますか。",
+      exampleVi: "Có đủ tiền không?"
+   },
+   {
+      kanji: "残る",
+      hiragana: "のこる",
+      pos: "Động từ",
+      meaning: "còn lại",
+      exampleJa: "ご飯が少し残っています。",
+      exampleVi: "Còn lại một ít cơm."
+   },
+   {
+      kanji: "残り",
+      hiragana: "のこり",
+      pos: "Danh từ",
+      meaning: "phần còn lại",
+      exampleJa: "残りを食べてもいいですか。",
+      exampleVi: "Tôi ăn phần còn lại có được không?"
+   },
+   {
+      kanji: "残す",
+      hiragana: "のこす",
+      pos: "Động từ",
+      meaning: "chừa lại, để lại",
+      exampleJa: "ご飯を少し残しました。",
+      exampleVi: "Tôi đã để lại một ít cơm."
+   },
+   {
+      kanji: "腐る",
+      hiragana: "くさる",
+      pos: "Động từ",
+      meaning: "thiu, hỏng",
+      exampleJa: "魚が腐っています。",
+      exampleVi: "Cá đã bị thiu."
+   },
+   {
+      kanji: "むける",
+      hiragana: "むける",
+      pos: "Động từ",
+      meaning: "bóc ra, tróc ra (tự bóc)",
+      exampleJa: "皮がむけました。",
+      exampleVi: "Da bị bong ra."
+   },
+   {
+      kanji: "むく",
+      hiragana: "むく",
+      pos: "Động từ",
+      meaning: "gọt, lột (vỏ)",
+      exampleJa: "りんごの皮をむきます。",
+      exampleVi: "Gọt vỏ táo."
+   },
+   {
+      kanji: "滑る",
+      hiragana: "すべる",
+      pos: "Động từ",
+      meaning: "trượt, trơn trượt",
+      exampleJa: "雪で道が滑ります。",
+      exampleVi: "Đường trơn vì tuyết."
+   },
+   {
+      kanji: "積もる",
+      hiragana: "つもる",
+      pos: "Động từ",
+      meaning: "chất đống, tích tụ",
+      exampleJa: "雪が積もっています。",
+      exampleVi: "Tuyết đang chất đống."
+   },
+   {
+      kanji: "積む",
+      hiragana: "つむ",
+      pos: "Động từ",
+      meaning: "chất lên, xếp lên",
+      exampleJa: "荷物を車に積みました。",
+      exampleVi: "Tôi đã chất hành lý lên xe."
+   },
+   {
+      kanji: "おろす",
+      hiragana: "おろす",
+      pos: "Động từ",
+      meaning: "dỡ xuống, hạ xuống",
+      exampleJa: "車から荷物をおろす。",
+      exampleVi: "Dỡ hành lý xuống xe."
+   },
+   {
+      kanji: "空く",
+      hiragana: "あく",
+      pos: "Động từ",
+      meaning: "trống, rảnh",
+      exampleJa: "席が空いています。",
+      exampleVi: "Ghế còn trống."
+   },
+   {
+      kanji: "空き部屋",
+      hiragana: "あきべや",
+      pos: "Danh từ",
+      meaning: "phòng trống",
+      exampleJa: "ホテルに空き部屋がありますか。",
+      exampleVi: "Khách sạn còn phòng trống không?"
+   },
+   {
+      kanji: "空き地",
+      hiragana: "あきち",
+      pos: "Danh từ",
+      meaning: "khu đất trống",
+      exampleJa: "家の近くに空き地があります。",
+      exampleVi: "Có một khu đất trống gần nhà."
+   },
+   {
+      kanji: "空席",
+      hiragana: "くうせき",
+      pos: "Danh từ",
+      meaning: "ghế trống",
+      exampleJa: "電車に空席を見つけました。",
+      exampleVi: "Tôi đã tìm thấy ghế trống trên tàu."
+   },
+   {
+      kanji: "空室",
+      hiragana: "くうしつ",
+      pos: "Danh từ",
+      meaning: "phòng trống",
+      exampleJa: "このホテルは空室があります。",
+      exampleVi: "Khách sạn này có phòng trống."
+   },
+   {
+      kanji: "空きがある",
+      hiragana: "あきがある",
+      pos: "Cụm từ",
+      meaning: "còn chỗ trống",
+      exampleJa: "このクラスに空きがあります。",
+      exampleVi: "Lớp học này còn chỗ trống."
+   },
+   {
+      kanji: "空きがない",
+      hiragana: "あきがない",
+      pos: "Cụm từ",
+      meaning: "không còn chỗ trống",
+      exampleJa: "空きがないので入れません。",
+      exampleVi: "Không còn chỗ trống nên không vào được."
+   },
+   {
+      kanji: "空き時間",
+      hiragana: "あきじかん",
+      pos: "Danh từ",
+      meaning: "thời gian rảnh",
+      exampleJa: "空き時間に本を読みます。",
+      exampleVi: "Tôi đọc sách trong thời gian rảnh."
+   },
+   {
+      kanji: "ふさがある",
+      hiragana: "ふさがある",
+      pos: "Cụm từ",
+      meaning: "bị lấp kín, không còn chỗ trống",
+      exampleJa: "道が車でふさがっている。",
+      exampleVi: "Đường bị xe cộ lấp kín."
+   },
+   {
+      kanji: "空ける",
+      hiragana: "あける",
+      pos: "Động từ",
+      meaning: "mở ra, làm trống ra",
+      exampleJa: "一つ席を空けてください。",
+      exampleVi: "Xin chừa cho tôi một chỗ ngồi."
+   },
+   {
+      kanji: "ふさぐ",
+      hiragana: "ふさぐ",
+      pos: "Động từ",
+      meaning: "che, lấp, chặn",
+      exampleJa: "入り口をふさがないでください。",
+      exampleVi: "Xin đừng chặn lối vào."
+   },
+   {
+      kanji: "下がる",
+      hiragana: "さがる",
+      pos: "Động từ",
+      meaning: "giảm xuống, hạ xuống",
+      exampleJa: "熱が下がりました。",
+      exampleVi: "Cơn sốt đã giảm."
+   },
+   {
+      kanji: "上がる",
+      hiragana: "あがる",
+      pos: "Động từ",
+      meaning: "tăng lên, nâng lên",
+      exampleJa: "値段が上がりました。",
+      exampleVi: "Giá đã tăng."
+   },
+   {
+      kanji: "下げる",
+      hiragana: "さげる",
+      pos: "Động từ",
+      meaning: "làm giảm, hạ xuống",
+      exampleJa: "音を下げてください。",
+      exampleVi: "Xin hãy giảm âm lượng xuống."
+   },
+   {
+      kanji: "上げる",
+      hiragana: "あげる",
+      pos: "Động từ",
+      meaning: "nâng lên, tăng lên",
+      exampleJa: "手を上げてください。",
+      exampleVi: "Xin hãy giơ tay lên."
+   },
+   {
+      kanji: "冷える",
+      hiragana: "ひえる",
+      pos: "Động từ",
+      meaning: "lạnh đi (tự động từ)",
+      exampleJa: "冬は体が冷えやすい。",
+      exampleVi: "Mùa đông cơ thể dễ bị lạnh."
+   },
+   {
+      kanji: "あたたまる",
+      hiragana: "あたたまる",
+      pos: "Động từ",
+      meaning: "ấm lên (tự động từ)",
+      exampleJa: "体があたたまりました。",
+      exampleVi: "Cơ thể đã ấm lên."
+   },
+   {
+      kanji: "冷やす",
+      hiragana: "ひやす",
+      pos: "Động từ",
+      meaning: "làm lạnh, làm mát",
+      exampleJa: "ビールを冷やしておきます。",
+      exampleVi: "Tôi làm lạnh bia sẵn."
+   },
+   {
+      kanji: "あたためる",
+      hiragana: "あたためる",
+      pos: "Động từ",
+      meaning: "làm ấm, hâm nóng",
+      exampleJa: "スープをあたためます。",
+      exampleVi: "Hâm nóng súp."
+   },
+   {
+      kanji: "冷める",
+      hiragana: "さめる",
+      pos: "Động từ",
+      meaning: "nguội đi (tự động từ)",
+      exampleJa: "スープが冷めました。",
+      exampleVi: "Súp đã nguội."
+   },
+   {
+      kanji: "冷ます",
+      hiragana: "さます",
+      pos: "Động từ",
+      meaning: "làm nguội",
+      exampleJa: "お茶を冷ましてから飲みます。",
+      exampleVi: "Làm nguội trà rồi uống."
+   },
+   {
+      kanji: "燃える",
+      hiragana: "もえる",
+      pos: "Động từ",
+      meaning: "cháy (tự động từ)",
+      exampleJa: "家が燃えています。",
+      exampleVi: "Ngôi nhà đang cháy."
+   },
+   {
+      kanji: "燃やす",
+      hiragana: "もやす",
+      pos: "Động từ",
+      meaning: "đốt cháy (tha động từ)",
+      exampleJa: "ゴミを燃やします。",
+      exampleVi: "Đốt rác."
+   },
+   {
+      kanji: "沸く",
+      hiragana: "わく",
+      pos: "Động từ",
+      meaning: "sôi (tự động từ)",
+      exampleJa: "お湯が沸きました。",
+      exampleVi: "Nước đã sôi."
+   },
+   {
+      kanji: "風呂が沸く",
+      hiragana: "ふろがわく",
+      pos: "Cụm từ",
+      meaning: "nước tắm đã nóng",
+      exampleJa: "風呂が沸きました。",
+      exampleVi: "Bồn tắm đã sẵn sàng."
+   },
+   {
+      kanji: "沸かす",
+      hiragana: "わかす",
+      pos: "Động từ",
+      meaning: "đun sôi",
+      exampleJa: "お湯を沸かします。",
+      exampleVi: "Đun sôi nước."
+   },
+   {
+      kanji: "風呂を沸かす",
+      hiragana: "ふろをわかす",
+      pos: "Cụm từ",
+      meaning: "đun nước tắm",
+      exampleJa: "母が風呂を沸かしています。",
+      exampleVi: "Mẹ đang đun nước tắm."
+   },
+   {
+      kanji: "鳴る",
+      hiragana: "なる",
+      pos: "Động từ",
+      meaning: "reo, kêu (tự động từ)",
+      exampleJa: "電話が鳴っています。",
+      exampleVi: "Điện thoại đang reo."
+   },
+   {
+      kanji: "鳴らす",
+      hiragana: "ならす",
+      pos: "Động từ",
+      meaning: "làm kêu, bấm (tha động từ)",
+      exampleJa: "ベルを鳴らしてください。",
+      exampleVi: "Xin hãy bấm chuông."
+   },
+   {
+      kanji: "役立つ",
+      hiragana: "やくだつ",
+      pos: "Động từ",
+      meaning: "có ích, hữu ích",
+      exampleJa: "その本は勉強に役立ちます。",
+      exampleVi: "Cuốn sách đó có ích cho việc học."
+   },
+   {
+      kanji: "役に立つ",
+      hiragana: "やくにたつ",
+      pos: "Cụm từ",
+      meaning: "có ích, giúp ích",
+      exampleJa: "日本語が仕事に役に立つ。",
+      exampleVi: "Tiếng Nhật giúp ích cho công việc."
+   },
+   {
+      kanji: "役立てる",
+      hiragana: "やくだてる",
+      pos: "Động từ",
+      meaning: "tận dụng, phát huy",
+      exampleJa: "学んだ知識を仕事に役立てる。",
+      exampleVi: "Tận dụng kiến thức đã học cho công việc."
+   },
+   {
+      kanji: "役に立てる",
+      hiragana: "やくにたてる",
+      pos: "Cụm từ",
+      meaning: "có thể giúp ích, phát huy được",
+      exampleJa: "日本語を役に立てたいです。",
+      exampleVi: "Tôi muốn phát huy tiếng Nhật để giúp ích."
+   },
+   {
+      kanji: "飾り",
+      hiragana: "かざり",
+      pos: "Danh từ",
+      meaning: "trang trí",
+      exampleJa: "部屋に花の飾りがあります。",
+      exampleVi: "Trong phòng có đồ trang trí bằng hoa."
+   },
+   {
+      kanji: "遊び",
+      hiragana: "あそび",
+      pos: "Danh từ",
+      meaning: "chơi, vui chơi",
+      exampleJa: "子供たちは公園で遊びをしています。",
+      exampleVi: "Bọn trẻ đang chơi ở công viên."
+   },
+   {
+      kanji: "砂遊び",
+      hiragana: "すなあそび",
+      pos: "Danh từ",
+      meaning: "chơi cát",
+      exampleJa: "子供が砂遊びをしています。",
+      exampleVi: "Đứa trẻ đang chơi cát."
+   },
+   {
+      kanji: "集まる",
+      hiragana: "あつまる",
+      pos: "Động từ",
+      meaning: "tập hợp, tụ tập",
+      exampleJa: "人が駅前に集まっています。",
+      exampleVi: "Mọi người đang tụ tập trước ga."
+   },
+   {
+      kanji: "教える",
+      hiragana: "おしえる",
+      pos: "Động từ",
+      meaning: "dạy, chỉ bảo",
+      exampleJa: "先生が日本語を教えます。",
+      exampleVi: "Thầy giáo dạy tiếng Nhật."
+   },
+   {
+      kanji: "踊り",
+      hiragana: "おどり",
+      pos: "Danh từ",
+      meaning: "nhảy múa",
+      exampleJa: "祭りで踊りを見ました。",
+      exampleVi: "Tôi đã xem múa ở lễ hội."
+   },
+   {
+      kanji: "思う",
+      hiragana: "おもう",
+      pos: "Động từ",
+      meaning: "nghĩ, cho rằng",
+      exampleJa: "私はそう思います。",
+      exampleVi: "Tôi nghĩ vậy."
+   },
+   {
+      kanji: "考える",
+      hiragana: "かんがえる",
+      pos: "Động từ",
+      meaning: "suy nghĩ, cân nhắc",
+      exampleJa: "将来のことを考えています。",
+      exampleVi: "Tôi đang suy nghĩ về tương lai."
+   },
+   {
+      kanji: "片付ける",
+      hiragana: "かたづける",
+      pos: "Động từ",
+      meaning: "dọn dẹp, sắp xếp",
+      exampleJa: "部屋を片付けます。",
+      exampleVi: "Tôi dọn dẹp phòng."
+   },
+   {
+      kanji: "手伝い",
+      hiragana: "てつだい",
+      pos: "Danh từ",
+      meaning: "giúp đỡ",
+      exampleJa: "母の手伝いをしました。",
+      exampleVi: "Tôi đã giúp mẹ."
+   },
+   {
+      kanji: "働き",
+      hiragana: "はたらき",
+      pos: "Danh từ",
+      meaning: "làm việc, công việc",
+      exampleJa: "彼の働きは会社に役立っています。",
+      exampleVi: "Sự làm việc của anh ấy có ích cho công ty."
+   },
+   {
+      kanji: "決まる",
+      hiragana: "きまる",
+      pos: "Động từ",
+      meaning: "được quyết định",
+      exampleJa: "会議の日が決まりました。",
+      exampleVi: "Ngày họp đã được quyết định."
+   },
+   {
+      kanji: "騒ぎ",
+      hiragana: "さわぎ",
+      pos: "Danh từ",
+      meaning: "ồn ào, náo động",
+      exampleJa: "外で大きな騒ぎがありました。",
+      exampleVi: "Ngoài kia có một vụ náo loạn lớn."
+   },
+   {
+      kanji: "知らせ",
+      hiragana: "しらせ",
+      pos: "Danh từ",
+      meaning: "thông báo, tin tức",
+      exampleJa: "先生から知らせがあります。",
+      exampleVi: "Có thông báo từ thầy giáo."
+   },
+   {
+      kanji: "頼み",
+      hiragana: "たのみ",
+      pos: "Danh từ",
+      meaning: "nhờ vả, yêu cầu",
+      exampleJa: "友達に頼みを聞きました。",
+      exampleVi: "Tôi đã nghe lời nhờ vả của bạn."
+   },
+   {
+      kanji: "疲れ",
+      hiragana: "つかれ",
+      pos: "Danh từ",
+      meaning: "sự mệt mỏi",
+      exampleJa: "仕事の疲れが取れません。",
+      exampleVi: "Không hết mệt sau công việc."
+   },
+   {
+      kanji: "違い",
+      hiragana: "ちがい",
+      pos: "Danh từ",
+      meaning: "sự khác nhau",
+      exampleJa: "日本語と中国語の違いは大きいです。",
+      exampleVi: "Tiếng Nhật và tiếng Trung có sự khác biệt lớn."
+   },
+   {
+      kanji: "始める",
+      hiragana: "はじめる",
+      pos: "Động từ",
+      meaning: "bắt đầu",
+      exampleJa: "勉強を始めます。",
+      exampleVi: "Tôi bắt đầu học."
+   },
+   {
+      kanji: "続き",
+      hiragana: "つづき",
+      pos: "Danh từ",
+      meaning: "phần tiếp theo",
+      exampleJa: "本の続きを読みたいです。",
+      exampleVi: "Tôi muốn đọc tiếp cuốn sách."
+   },
+   {
+      kanji: "暮れ",
+      hiragana: "くれ",
+      pos: "Danh từ",
+      meaning: "hoàng hôn, cuối năm",
+      exampleJa: "日が暮れました。",
+      exampleVi: "Mặt trời đã lặn."
+   },
+   {
+      kanji: "行き",
+      hiragana: "いき",
+      pos: "Danh từ",
+      meaning: "lượt đi",
+      exampleJa: "東京行きの電車です。",
+      exampleVi: "Đây là chuyến tàu đi Tokyo."
+   },
+   {
+      kanji: "帰り",
+      hiragana: "かえり",
+      pos: "Danh từ",
+      meaning: "lượt về",
+      exampleJa: "帰りに買い物をしました。",
+      exampleVi: "Trên đường về tôi đã mua đồ."
+   },
+   {
+      kanji: "急ぎ",
+      hiragana: "いそぎ",
+      pos: "Danh từ",
+      meaning: "vội vàng, khẩn cấp",
+      exampleJa: "急ぎの仕事があります。",
+      exampleVi: "Có công việc gấp."
+   },
+   {
+      kanji: "遅れ",
+      hiragana: "おくれ",
+      pos: "Danh từ",
+      meaning: "sự chậm trễ",
+      exampleJa: "電車に遅れが出ました。",
+      exampleVi: "Tàu bị trễ."
+   },
+   {
+      kanji: "時代遅れ",
+      hiragana: "じだいおくれ",
+      pos: "Danh từ",
+      meaning: "lỗi thời",
+      exampleJa: "その考えは時代遅れです。",
+      exampleVi: "Cách nghĩ đó đã lỗi thời."
+   },
+   {
+      kanji: "貸し",
+      hiragana: "かし",
+      pos: "Danh từ",
+      meaning: "cho vay, cho mượn",
+      exampleJa: "友達に貸しがあります。",
+      exampleVi: "Tôi đã cho bạn mượn."
+   },
+   {
+      kanji: "借り",
+      hiragana: "かり",
+      pos: "Danh từ",
+      meaning: "mượn, vay",
+      exampleJa: "借りを返します。",
+      exampleVi: "Tôi trả lại món vay."
+   },
+   {
+      kanji: "勝ち",
+      hiragana: "かち",
+      pos: "Danh từ",
+      meaning: "thắng",
+      exampleJa: "試合で勝ちました。",
+      exampleVi: "Tôi đã thắng trận đấu."
+   },
+   {
+      kanji: "負け",
+      hiragana: "まけ",
+      pos: "Danh từ",
+      meaning: "thua",
+      exampleJa: "試合で負けました。",
+      exampleVi: "Tôi đã thua trận đấu."
+   },
+   {
+      kanji: "迎え",
+      hiragana: "むかえ",
+      pos: "Danh từ",
+      meaning: "đón tiếp",
+      exampleJa: "駅まで迎えに行きます。",
+      exampleVi: "Tôi đi đón ở ga."
+   },
+   {
+      kanji: "始まり",
+      hiragana: "はじまり",
+      pos: "Danh từ",
+      meaning: "sự bắt đầu",
+      exampleJa: "映画の始まりが面白いです。",
+      exampleVi: "Phần mở đầu của bộ phim thú vị."
+   },
+   {
+      kanji: "終わり",
+      hiragana: "おわり",
+      pos: "Danh từ",
+      meaning: "sự kết thúc",
+      exampleJa: "夏休みの終わりです。",
+      exampleVi: "Đã là cuối kỳ nghỉ hè."
+   },
+   {
+      kanji: "戻り",
+      hiragana: "もどり",
+      pos: "Danh từ",
+      meaning: "trở lại, hồi phục",
+      exampleJa: "雨の戻りがあります。",
+      exampleVi: "Mưa quay trở lại."
+   },
+   {
+      kanji: "別れ",
+      hiragana: "わかれ",
+      pos: "Danh từ",
+      meaning: "chia tay",
+      exampleJa: "友達と別れが悲しいです。",
+      exampleVi: "Tôi buồn khi chia tay bạn bè."
+   },
+   {
+      kanji: "喜び",
+      hiragana: "よろこび",
+      pos: "Danh từ",
+      meaning: "niềm vui",
+      exampleJa: "合格の喜びを感じました。",
+      exampleVi: "Tôi cảm thấy niềm vui khi đỗ."
+   },
+   {
+      kanji: "大喜び",
+      hiragana: "おおよろこび",
+      pos: "Danh từ",
+      meaning: "vô cùng vui sướng",
+      exampleJa: "子供たちは大喜びでした。",
+      exampleVi: "Bọn trẻ rất vui sướng."
+   },
+   {
+      kanji: "楽しみ",
+      hiragana: "たのしみ",
+      pos: "Danh từ",
+      meaning: "niềm vui, sự mong chờ",
+      exampleJa: "旅行は楽しみです。",
+      exampleVi: "Tôi mong chờ chuyến du lịch."
+   },
+   {
+      kanji: "笑い",
+      hiragana: "わらい",
+      pos: "Danh từ",
+      meaning: "tiếng cười",
+      exampleJa: "その話で笑いが起きました。",
+      exampleVi: "Câu chuyện đó gây ra tiếng cười."
+   },
+   {
+      kanji: "大笑い",
+      hiragana: "おおわらい",
+      pos: "Danh từ",
+      meaning: "cười lớn",
+      exampleJa: "みんな大笑いしました。",
+      exampleVi: "Mọi người đã cười lớn."
+   },
+   {
+      kanji: "驚き",
+      hiragana: "おどろき",
+      pos: "Danh từ",
+      meaning: "ngạc nhiên",
+      exampleJa: "そのニュースは大きな驚きでした。",
+      exampleVi: "Tin tức đó thật sự ngạc nhiên."
+   },
+   {
+      kanji: "怒り",
+      hiragana: "いかり",
+      pos: "Danh từ",
+      meaning: "sự tức giận",
+      exampleJa: "彼は怒りを感じています。",
+      exampleVi: "Anh ấy đang cảm thấy tức giận."
+   },
+   {
+      kanji: "悲しみ",
+      hiragana: "かなしみ",
+      pos: "Danh từ",
+      meaning: "nỗi buồn",
+      exampleJa: "別れの悲しみがあります。",
+      exampleVi: "Có nỗi buồn chia ly."
+   },
 ];
