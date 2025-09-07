@@ -1,4 +1,4 @@
-const vocabData = [
+const vocab = [
    {
       kanji: "男性",
       hiragana: "だんせい",
